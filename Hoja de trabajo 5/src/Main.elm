@@ -31,7 +31,7 @@ primos n =
 nPrimos: Int -> List Int
 nPrimos s = conta (s , 2) 
 conta (s,y) = 
-    if n == 0 
+    if s == 0 
     then []
     else if esPrimo y == False
     then conta (s,y + 1)
